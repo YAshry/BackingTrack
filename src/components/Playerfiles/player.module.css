@@ -1,0 +1,102 @@
+.player_row_container {
+  box-shadow: 0px 0px 4px black;
+  background-color: #222222;
+  color: white;
+  position: fixed;
+  z-index: 999;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.player_image {
+  box-shadow: 0px 0px 5px black;
+  border-radius: 5px;
+}
+
+.track_name {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 350px;
+  font-size: 17px;
+}
+
+.track_artist {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 350px;
+  font-size: 14px;
+  color: #ccc;
+  line-height: 15px;
+}
+
+.track_price_tag {
+  width: 85px;
+  display: flex;
+  font-size: 14px;
+  border-radius: 50px;
+  align-items: center;
+  justify-content: center;
+  background-color: #96331d;
+  box-shadow: 0px 0px 5px black;
+  text-shadow: 0px 0px 5px black;
+}
+
+.middle_container {
+  font-size: 17px;
+  align-items: center;
+  justify-content: center;
+}
+
+.volume_icon,
+.addtocart_icon {
+  padding: 8px;
+  border-radius: 50%;
+  justify-content: center;
+  background-color: #96331d;
+  box-shadow: 0px 0px 5px black;
+}
+.volume_icon:hover,
+.addtocart_icon:hover {
+  background-color: #c0a33f;
+  transition: all 0.2s;
+}
+
+.rewind_icon,
+.play_icon,
+.forward_icon,
+.shuffle_icon,
+.volume_icon,
+.addtocart_icon {
+  display: flex;
+  align-items: center;
+}
+
+/* Music Progress Bar {Slider} */
+.slidecontainer {
+  width: 100%;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 400px;
+  height: 5px;
+  border-radius: 100px;
+  background-color: #ccc;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #96331d;
+  cursor: pointer;
+}
+
+.slider::-webkit-slider-finished-track {
+  background-color: red;
+}

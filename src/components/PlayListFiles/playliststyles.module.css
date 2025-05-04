@@ -1,0 +1,41 @@
+.backButton{
+    gap:10px;
+    position: fixed;
+    text-decoration: none;
+    margin: 20px 0px 0px 10px;   
+}
+
+.sectionOneContainer{
+    gap:100px;
+    display:flex;
+    position: relative;
+    align-items: start;
+    justify-content: right;
+    margin: 100px 50px 80px 50px;
+}
+
+.playlistInformationContainer{
+    gap:15px;
+    left:50px;
+    color:#ccc;
+    display: flex;
+    font-size: 22px;
+    position: fixed;
+    align-items: center;
+    flex-direction: column;    
+    justify-content: center;
+}
+
+.imageContainer{
+    width:250px;
+    height:250px;
+    display: flex;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.imageContainer img{
+    width:100%;
+    border-radius: 10px;
+}

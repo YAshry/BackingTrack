@@ -1,0 +1,45 @@
+.modalMainContainer{
+    gap:10px;
+    color:#ccc;
+    display:flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.modalTitleContainer{
+    width:100%;
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.closeButton{
+    padding:10px;
+    display: flex;
+    font-size: 22px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    background-color: #832a16;
+}
+
+.closeButton:hover{
+    cursor: pointer;
+    transition: 0.5s all;
+    background-color: #c0a33f;
+}
+
+.modalSeparator{
+    width:100%;
+}
+
+.modalContentContainer{
+    width:100%;
+    display: flex;
+    padding:30px 0px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}

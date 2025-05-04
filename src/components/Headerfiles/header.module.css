@@ -1,0 +1,219 @@
+.header {
+  height:auto;
+  color: #d2d2d2;
+  box-shadow: 0px 0px 4px black;
+}
+
+.logo {
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.logo img {
+  height: 40px;
+  width: 40px;
+}
+
+.title {
+  color: #cfc18e;
+  font-size: 28px;
+  margin: 0;
+}
+
+.title span {
+  color: #96331d;
+  font-weight: bold;
+}
+
+.username {
+  font-size: 17px;
+  width: 157px;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.header_icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 5px;
+  color: #d2d2d2;
+}
+.header_icon:hover {
+  color: #96331d;
+}
+
+.header_page_title {
+  font-size: 19px;
+  color: #d2d2d2;
+}
+
+.header_title_list {
+  align-items: center;
+  justify-content: center;
+}
+
+.header_title_container {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0px 10px 0px 10px;
+}
+
+.header_title_container:hover,
+.header_title_container:hover .header_icon,
+.header_title_container:hover .header_page_title {
+  color: #96331d;
+}
+
+/* Drop Down */
+.header_dropdown {
+  position: relative;
+  display: inline-block;
+}
+.header_dropdown .header_icon:hover {
+  color: #96331d;
+}
+.header_dropdown_content {
+  z-index: 999;
+  display: none;
+  min-width: 200px;
+  position: absolute;
+  border-radius: 10px;
+  background-color: rgb(27, 27, 27);
+}
+.header_dropdown_content a {
+  padding: 7px;
+  display: block;
+  color: #d2d2d2;
+  text-decoration: none;
+}
+.header_dropdown_content a:hover {
+  color: #96331d;
+  font-weight: bold;
+  transition: 0.5s all;
+  background-color: rgb(192, 192, 192);
+}
+.header_dropdown:hover .header_dropdown_content {
+  display: flex;
+  transition: 0.5s all;
+  flex-direction: column;
+}
+
+/********* Check Box ***********/
+/* Replaces original Checkbox */
+.checkbox {
+  position: absolute;
+  opacity: 0;
+}
+
+.checkbox + label {
+  font-size: 15px;
+  color: #ccc;
+}
+
+/* Checkbox Outer Style */
+.checkbox + label:before {
+  display: inline-block;
+  vertical-align: text-top;
+  content: "";
+  width: 18px;
+  height: 18px;
+  border-radius: 5px;
+  margin-right: 5px;
+  background: rgb(236, 234, 234);
+}
+
+/* Checkbox Hover */
+.checkbox:hover + label:before {
+  background: #ccc;
+}
+
+/* Checkbox box */
+.checkbox:focus + label:before {
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);
+}
+
+/* Checkbox Background after */
+.checkbox:checked + label:before {
+  background: #96331d;
+  color: #d2d2d2;
+  transition-duration: 0.5s;
+}
+
+.checkbox:checked + label {
+  color: white;
+}
+
+/* Check mark poition */
+.checkbox + label {
+  position: relative;
+  cursor: pointer;
+  padding: 0;
+}
+
+/* Checkbox Mark */
+.checkbox:checked + label:after {
+  content: "";
+  position: absolute;
+  left: 3.5px;
+  top: 10px;
+  background: white;
+  width: 2px;
+  height: 2px;
+  box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white,
+    4px -6px 0 white, 4px -8px 0 white;
+  transform: rotate(45deg);
+}
+
+.profile_image {
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 20px #000;
+}
+
+.profile_image img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+/* Tool Tip */
+.tooltip {
+  position: relative;
+  display: flex;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  min-width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 8px 5px 8px;
+  position: absolute;
+  z-index: 1;
+  top: 150%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent black transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}

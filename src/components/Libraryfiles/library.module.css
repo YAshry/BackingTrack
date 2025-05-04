@@ -1,0 +1,145 @@
+.categoriesContainer
+{
+    height:100vh;
+    width:220px;
+    display:flex;
+    position: fixed;
+    border-width:1px;
+    flex-direction: column; 
+    border-radius: 10px 10px 0px 0px;
+}
+
+.rightLibrarySection{
+    height:550px;
+    overflow-y: scroll;
+    position: relative;
+    border-radius:10px;
+    background-color:#1d1d1d;
+}
+
+.categoriesContainer div a .active{
+    color:white;
+    cursor: pointer;   
+    transition: 0.4s all;
+    background-color: #832a16;
+    box-shadow: 0px 0px 5px black;
+}
+
+.categoryTitle
+{
+    display: flex;
+    color:#d2d2d2;
+    font-size: 25px;
+    align-items: center;
+    justify-content: center;
+}
+
+.categoryButton
+{
+    display: flex;
+    color:#d2d2d2;
+    padding-left:60px;
+    align-items: center;
+    text-decoration: none;
+}
+
+.categoryButton:hover
+{
+    color:white;
+    cursor: pointer;
+    transition: 0.4s all;
+    background-color: #832a16;
+    box-shadow: 0px 0px 5px black;
+}
+
+.categoryIcon
+{
+    margin-right:10px;
+}
+
+.price_span{
+    color:#c44023;
+    margin-right:2px;
+    margin-left: -25px;
+}
+
+/* Library: Artists */
+.artistCardsContainer{
+    gap:15px;
+    padding:20px;
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.artistContentContainer{
+    width:180px;
+    height:180px;
+    color:#ccc;
+    display:flex;
+    position: relative;
+    border-radius: 30px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 5px #000000;
+}
+
+.artistImageStyle{
+    width:100%;
+    border-radius:30px;
+}
+
+.artistInformation{
+    gap:10px;
+    width:100%;
+    height:100%;
+    display:none;
+    position: absolute;
+    border-radius: 10%;
+    align-items: center;
+    transition:0.5s all;
+    flex-direction:column;
+    justify-content: center;
+    background-color: rgba(0,0,0,0.9);
+}
+
+.artistContentContainer span{
+    font-size: 25px;
+}
+
+.goToArtistButton{
+    color:#ccc;
+    font-size: 15px;
+    padding:5px 15px;
+    border-radius: 10px;
+    text-decoration: none;
+    background-color: #832a16;
+}
+
+.goToArtistButton:hover{
+    cursor: pointer;
+    transition:0.5s all;
+    background-color: #c0a33f;
+}
+
+.artistContentContainer:hover .artistInformation{
+    display: flex;
+    animation: 0.5s artistCardHover;
+}
+
+@keyframes artistCardHover {
+    0%{
+        opacity:0;
+    }
+    100%{
+        opacity:1;
+    }
+}
+
+.addPlayListButton{
+    display:flex;
+    margin-top: 50px;
+    align-items: center;
+    justify-content: center;
+}

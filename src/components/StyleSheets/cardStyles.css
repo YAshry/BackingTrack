@@ -1,0 +1,108 @@
+.cardContainer{
+    align-items: end;
+    justify-content: center;
+  }
+  
+  .cardContainer img{
+    opacity: 1;
+  }
+  
+  .cardContainer:hover img {
+    opacity: 0.2;
+    transition: all 0.5s;
+  }
+  
+  .cardContainer:hover .cardIconsContainer {
+    opacity: 1;
+    min-width:180px;
+    transition: all 0.5s;
+  }
+  
+  .cardIcons {
+    color: #ccc;
+  }
+  
+  .cardIcons:hover {
+    color: white;
+    cursor: pointer;
+  }
+  
+  .cardIconsContainer {
+    position: absolute;
+    text-align: center;
+    align-items: center;
+    opacity: 0;
+  }
+  
+  /* Drop Down */
+  .cardDropDown {
+    position: relative;
+    display: inline-block;
+  }
+  .cardDropDown .header_icon:hover {
+    color: #96331d;
+  }
+  .cardDropDownContent {
+    display: none;
+    position: absolute;
+    background-color: rgb(27, 27, 27);
+    min-width: 125px;
+    top: 0;
+    margin-left: -90px !important;
+    margin-top: -52px;
+    z-index: 999;
+    border-radius: 10px;
+    font-size: 14px;
+  }
+  .cardDropDownContent a {
+    color: white;
+    padding: 4px;
+    text-decoration: none;
+    display: block;
+  }
+  .cardDropDownContent a:hover {
+    background-color: rgb(192, 192, 192);
+    color: #96331d;
+    transition: all 0.5s;
+    font-weight: bold;
+  }
+  .cardDropDown:hover .cardDropDownContent {
+    display: block;
+    transition-duration: 0.5s;
+  }
+  
+  .song_name {
+    font-size: 18px;
+    width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 5px 28px 0px 28px;
+  }
+  .artist_name {
+    font-size: 14px;
+    color: #ccc;
+    width: 200px;
+    padding: 0px 28px 0px 28px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .track_category {
+    background-color: #c0a33f;
+    color: white;
+    text-shadow: 0px 0px 5px black;
+    font-weight: bold;
+    border-radius: 10px;
+    width: 60px;
+    margin: 5px 28px 0px 28px;
+    padding: 3px 0px 5px 0px;
+    text-align: center;
+  }
+
+  .library_track_category{
+    background-color: #c0a33f;
+    color: white;
+    
+  }
